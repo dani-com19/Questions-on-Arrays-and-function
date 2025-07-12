@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+// Function to check if a number is even
+bool isEven(int num) {
+    if (num % 2 == 0) {
+        return true;  // Number is even
+    } else {
+        return false; // Number is odd
+    }
+}
+
+int main() {
+    int number;
+
+    // Ask the user to enter a number
+    cout << "Enter a number: ";
+    cin >> number;
+
+    // Call isEven function and display result
+    if (isEven(number)) {
+        cout << number << " is even." << endl;
+    } else {
+        cout << number << " is odd." << endl;
+    }
+
+    return 0;
+}
