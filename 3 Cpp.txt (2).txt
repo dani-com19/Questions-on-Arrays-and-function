@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numbers[5];   // Array to store 5 numbers
+    int sum = 0;      // To hold the sum of numbers
+    float average;    // To store the average
+
+    cout << "Enter 5 numbers:" << endl;
+
+    // Input 5 numbers and calculate the sum
+    for (int i = 0; i < 5; i++) {
+        cin >> numbers[i];
+        sum += numbers[i];
+    }
+
+    // Calculate the average
+    average = sum / 5.0; // Use 5.0 to ensure float division
+
+    cout << "The average of the numbers is: " << average << endl;
+
+    return 0;
+}
