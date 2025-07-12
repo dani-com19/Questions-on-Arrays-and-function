@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numbers[5]; // Array to store 5 numbers
+    int max;        // Variable to hold the largest number
+
+    cout << "Enter 5 numbers:" << endl;
+
+    // Input 5 numbers into the array
+    for (int i = 0; i < 5; i++) {
+        cin >> numbers[i];
+    }
+
+    // Assume the first element is the largest initially
+    max = numbers[0];
+
+    // Loop to find the largest number
+    for (int i = 1; i < 5; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i]; // Update max if a larger number is found
+        }
+    }
+
+    cout << "The largest number in the array is: " << max << endl;
+
+    return 0;
+}
